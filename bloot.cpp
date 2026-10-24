@@ -88,12 +88,12 @@ cout << "your total of TENs is : " << TEN_total;
   cin >>sb3hCount;
   int sb3h_total;
   sb3h_total = sb3hCount * sb3h;
-  cout << "\n your total of ts3h is : " << sb3h_total;
+  cout << "\n your total of ts3h is : " << sb3h_total << "\n";
 //sb3h
 
 
 int final_total;
-final_total = sb3h_total + thmaneh_total + ts3h_total + TENcount + J_total + Q_total + K_total + A_total;
+final_total = sb3h_total + thmaneh_total + ts3h_total + TEN_total + J_total + Q_total + K_total + A_total;
 cout << "your final total is :" << final_total;
 
     return 0;
