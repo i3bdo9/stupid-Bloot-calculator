@@ -10,7 +10,7 @@
 using namespace std;
 
 int main() {
-    int A, TEN, K, Q, J, ts3h, thmaneh, sb3h;
+    int A, TEN, K, Q, J, ts3h, thmaneh, sb3h, sra, _5msen, meaa, arb3mea;
        A = 11 ;
    TEN = 10;
    K = 4;
@@ -19,6 +19,10 @@ int main() {
    ts3h = 0;
    thmaneh = 0;
    sb3h = 0;
+   sra = 4;
+   _5msen = 10;
+   meaa = 20;
+   arb3mea = 40;
    cout << "welcome \n " ;
    
    int aceCount;
@@ -92,8 +96,45 @@ cout << "your total of TENs is : " << TEN_total;
 //sb3h
 
 
+int sraCount;
+cout << "\n if there is a sra type \"1\" if there is not type \"0\" ";
+cin >> sraCount;
+int sra_total;
+sra_total = sraCount * sra;
+cout << "\n your sra = " << sra_total << "\n"; 
+// السرا
+
+
+int _5msenCount;
+cout << "\n if there is a 5msen type \"1\" if there is not type \"0\"";
+cin >> _5msenCount;
+int _5msen_total;
+_5msen_total = _5msenCount * _5msen;
+cout << "\n your 5msen = " << _5msen_total << "\n";
+//الخمسين
+
+
+int meaaCount;
+cout << "\n if there is a meaa type \"1\" if there is not type \"0\"";
+cin >> meaaCount;
+int meaa_total;
+meaa_total = meaaCount * meaa;
+cout << "\n your meaa = " << meaa_total << "\n";
+//الميا
+
+
+int arb3meaCount;
+cout << "\n if there is a arb3mea type \"1\" if there is not type \"0\"";
+cin >> arb3meaCount;
+int arb3mea_total;
+arb3mea_total = arb3meaCount * arb3mea;
+cout << "\n your arb3mea = " << arb3mea_total << "\n";
+//اربع ميا
+
+
 int final_total;
-final_total = sb3h_total + thmaneh_total + ts3h_total + TEN_total + J_total + Q_total + K_total + A_total;
+final_total = sb3h_total + thmaneh_total + ts3h_total + TEN_total + 
+J_total + Q_total + K_total + A_total + sra_total + _5msen_total + meaa_total + arb3mea_total;
 cout << "your final total is :" << final_total;
 
     return 0;
